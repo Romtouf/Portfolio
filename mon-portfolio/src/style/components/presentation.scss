@@ -1,0 +1,7 @@
+.presentation {
+@include flex(column, center, center);
+    &__text {
+    width: 38%;
+    text-align: center;
+    }
+}
