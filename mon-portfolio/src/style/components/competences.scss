@@ -1,0 +1,15 @@
+.competences {
+    &__infos {
+      margin-top: 5px;
+      text-align: center;
+      color: $color-3;
+      @include font(18px, 500);
+   
+      &__title {
+        @include font(22px, 700);
+        color: $color-1;
+      }
+
+    }
+   
+      }

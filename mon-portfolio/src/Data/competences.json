@@ -1,0 +1,32 @@
+[
+    {
+        "id": "c1",
+        "title": "HTML",
+        "picture": "./html-logo.svg"
+    },
+    {
+        "id": "c2",
+        "title": "CSS",
+        "picture": "./css-logo.svg"
+    },
+    {
+        "id": "c3",
+        "title": "JavaScript",
+        "picture": "./javascript-logo.svg"
+    },
+    {
+        "id": "c4",
+        "title": "React js",
+        "picture": "./react-logo.svg"
+    },
+    {
+        "id": "c5",
+        "title": "Redux",
+        "picture": "./redux-logo.svg"
+    },
+    {
+        "id": "c6",
+        "title": "Node js",
+        "picture": "./node-logo.svg"
+    }
+]

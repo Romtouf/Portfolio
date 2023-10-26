@@ -1,47 +1,53 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
 import logo from "../assets/photo-portfolio.webp";
+import logoGithub from "../assets/github-mark-white.svg";
 
 const Header = () => {
     return (
        
-              <>
+    <>
       <div className="header">
         <div className="header__image">
-          <img src={logo} alt="Logo"></img>
+          <img className='logo-portrait' src={logo} alt="Logo"></img>
         </div>
         <div className="header__links">
-          <NavLink
-            to="/"
+          <a href='/'
             className={(nav) => (nav.isActive ? "nav-active" : "")}
           >
             Accueil
-          </NavLink>
-          <NavLink
-            to="/presentation"
+          </a>
+          <a
+            href="#presentation"
             className={(nav) => (nav.isActive ? "nav-active" : "")}
           >
             Présentation
-          </NavLink>
-          <NavLink
-            to="/competences"
+          </a>
+          <a href='#mes-travaux'
+            className={(nav) => (nav.isActive ? "nav-active" : "")}
+          >
+            Mes travaux
+          </a>
+          <a href='#competences'
             className={(nav) => (nav.isActive ? "nav-active" : "")}
           >
             Compétences
-          </NavLink>
-          <NavLink
-            to="/contact"
-            className={(nav) => (nav.isActive ? "nav-active" : "")}
-          >
-            Contact
-          </NavLink>
-          <NavLink
-            to="/cv"
+          </a>
+          <a href='#mon-cv'
             className={(nav) => (nav.isActive ? "nav-active" : "")}
           >
             Mon CV
-          </NavLink>
+          </a>
+          <a href='#contact'
+            className={(nav) => (nav.isActive ? "nav-active" : "")}
+          >
+            Contact
+          </a>
         </div>
+        <NavLink className="logo-github"
+          to="https://github.com/Romtouf"
+          ><img src={logoGithub} alt="Logo Github" />
+          </NavLink>
       </div>
     </>
     

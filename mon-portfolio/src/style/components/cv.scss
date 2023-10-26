@@ -1,0 +1,19 @@
+.cv {
+    @include flex(row, center, center);
+    margin-bottom: 100px;
+    & button {
+        height: 100px;
+        width: 300px;
+        border-radius: 10px;
+        border: none;
+        background-color: $color-1;
+        color: $color-2;
+        cursor: pointer;
+        @include font(22px ,700);
+    }
+    & img {
+        border-radius: 50px;
+        height: 14px;
+        // width: 22px;
+    }
+}

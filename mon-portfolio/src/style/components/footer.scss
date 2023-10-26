@@ -1,5 +1,28 @@
 .footer {
+    @include flex(column, center, center);
     width: 100%;
-    height: 150px;
-    background-color: midnightblue;
+    height: 300px;
+    background-color: $color-1;
+    & a {
+        color: $color-2;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    &__logos {
+        @include flex(row, center, center);
+        gap: 30px;
+        margin-bottom: 20px;
+    }
+    &__text {
+        color: $color-2;
+    }
+    
+}
+
+.enveloppe{
+    background-color: $color-2;
+    color: $color-1;
+    height: 78px;
+    border-radius: 50px;
+    padding: 10px;
 }

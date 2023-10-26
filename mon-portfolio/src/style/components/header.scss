@@ -1,74 +1,97 @@
 .header {
   height: 150px;
   width: 100%;
-  background: $color-5;
-    @include flex(row, space-between, center);
-    margin: 0 0 50px 0;
-    @media (max-width: 500px) {
-      position: relative;
-      margin: 20px -20px 30px 20px;
+  background: $color-1;
+    @include flex(row,center, center);
+    margin: 0;
+    gap: 120px;
+    @media (min-width: 1400.01px) {
+      gap: 50px;
     }
+    @media (max-width: 1400px) {
+      gap: 40px;
+    }
+    @media (max-width: 804px) {
+     height: 200px;
+    }
+    @media (max-width: 596px) {
+      height: 300px;
+     }   
+
     &__image {
-      margin-left: 100px;
-      @media (max-width: 500px) {
-        margin: 0;
-      }
         & img {   
             border-radius: 50px;
-            @media (max-width: 500px) {
-                width: 145px;
-                height: 47px;
-        }
+        @media (max-width: 450px) {
+          height: 70px;
+         }  
       }
     }
     &__links {
-      @include flex(row, flex-start, center);
-      margin-right: 100px;
-      gap: 57px;
-      @media (max-width: 500px) {
-        position: absolute;
-        top: 20px;
-        right: 40px;
-        align-items: center;
-        margin-right: 0;
-        gap: 26px;
+      @include flex(row, center, center);
+      gap: 60px;
+      @media (min-width: 1400px) {
+        flex-wrap: wrap;
+        @include font(22px, 700);
+        gap: 30px;
       }
+      @media (max-width: 1400px) {
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+      @media (max-width: 1200px) {
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      @media (max-width: 596px) {
+        @include flex(column, center, center);
+      
+      }
+     
+      
       & a {
         padding: 10px;
         text-decoration: none;
-        color: $color-4;
+        color: $color-2;
         border-radius: 5px;
-        @include font-size-weight(24px);
-        @media (max-width: 500px) {
-          @include font-size-weight(12px);
+        @include font(24px, 500);
+        @media (max-width: 804px) {
+          @include font(20px, 500);
+        }
+        @media (max-width: 699px) {
+          @include font(16px, 500);
+        }
+        @media (max-width: 596px) {
+          @include font(16px, 500);
         }
       }
     }
   }
-  
+
   .nav-active {
     position: relative;
     &:hover {
-        background: $color-4;
-        color: $color-2;
+        background: $color-2;
+        color: $color-1;
     }
-    // &::after {
-    //   content: "";
-    //   height: 2px;
-    //   width: 0;
-    //   background: $color-1;
-    //   position: absolute;
-    //   border-radius: 10px;
-    //   bottom: 0px;
-    //   left: 50%;
-    //   transform: translateX(-50%);
-    //   -webkit-animation: anim 0.3s ease forwards;
-    //   animation: anim 0.6s ease forwards;
-  
-//       @keyframes anim {
-//         to {
-//           width: 100%;
-//         }
-//       }
-//     }
+ 
+  }
+
+  .logo-portrait {
+    @media (max-width: 1400px) {
+      margin-left: 30px;
+    }
+    // @media (max-width: 596px) {
+    //   margin-left: 10px;
+    // }
+  }
+  .logo-github {
+    @media (max-width: 1400px) {
+      margin-right: 30px;
+    }
+    & img {
+       @media (max-width: 450px) {
+        height: 70px;
+       }  
+    }
+
   }

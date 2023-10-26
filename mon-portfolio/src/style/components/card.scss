@@ -1,13 +1,22 @@
 .card {
     &__infos {
-      position: absolute;
-      z-index: 1;
-      top: 295px;
-      left: 20px;
+      margin-top: 10px;
+      text-align: center;
       color: $color-3;
-      @include font-size-weight(18px);
+      @include font(18px, 500);
       @media (max-width: 500px) {
         top: 190px;
       }
+      &__title {
+        @include font(18px, 700);
+        color: $color-1;
+        margin-bottom: 5px;
+      }
+      &__content {
+        @include font(18px, 500);
+        font-style: italic;
+        color: $color-1;
+      }
     }
-  }
+   
+      }

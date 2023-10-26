@@ -1,6 +1,7 @@
-@mixin font-size-weight($size) {
+@mixin font($size, $weight) {
     font-size: $size;
-    font-weight: 500;
+    font-weight: $weight;
+    font-family: "Montserrat", sans-serif;
   }
   
   @mixin flex($direction, $justify, $align) {

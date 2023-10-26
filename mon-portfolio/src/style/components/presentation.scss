@@ -1,7 +1,33 @@
 .presentation {
+    height: 500px;
+    width: 100%;
+    background-image: url(../../assets/image-code.webp);
 @include flex(column, center, center);
-    &__text {
+@media (min-width: 360px) {
+    padding-top: 70px;
+    padding-bottom: 40px;
+}
+&__title {
+    @include font(40px, 700);
+    margin-bottom: 40px;
+}
+&__text {
     width: 38%;
     text-align: center;
+    @include font(22px, 500);
+    @media (max-width: 1200px) {
+        width: 50%;
     }
+    @media (max-width: 804px) {
+        width: 70%;
+    }
+}
+&__name {
+    @include font(28px, 700);
+    font-style: italic;
+    margin-top: 30px;
+    @media (max-width: 1200px) {
+        padding-bottom: 50px;
+    }
+}
 }
