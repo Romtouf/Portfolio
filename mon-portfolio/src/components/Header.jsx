@@ -14,33 +14,33 @@ const Header = () => {
         </div>
         <div className="header__links">
           <NavLink to='/'
-            className={(nav) => (nav.isActive ? "nav-active" : "")}
+            className="nav-active"
           >
             Accueil
           </NavLink>
           <Link
             to="#presentation"
-            className={(nav) => (nav.isActive ? "nav-active" : "")}
+            className="nav-active"
           >
             Présentation
           </Link>
           <Link to='#mes-travaux'
-            className={(nav) => (nav.isActive ? "nav-active" : "")}
+            className="nav-active"
           >
             Mes travaux
           </Link>
           <Link to='#competences'
-            className={(nav) => (nav.isActive ? "nav-active" : "")}
+            className="nav-active"
           >
             Compétences
           </Link>
           <Link to='#mon-cv'
-            className={(nav) => (nav.isActive ? "nav-active" : "")}
+            className="nav-active"
           >
             Mon CV
           </Link>
           <Link to='#contact'
-            className={(nav) => (nav.isActive ? "nav-active" : "")}
+            className="nav-active"
           >
             Contact
           </Link>
