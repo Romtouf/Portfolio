@@ -2,7 +2,7 @@ import React from 'react';
 import Presentation from '../components/Presentation';
 import Card from '../components/Card';
 import data from "../Data/travaux.json";
-import dataCompetences from "../Data/competences.json"
+import dataCompetences from "../Data/competences.json";
 import Competences from '../components/Competences';
 import { NavLink } from "react-router-dom";
 import Cv from "../components/Cv";
@@ -10,13 +10,14 @@ import Contact from '../components/Contact';
 
 
 const Home = () => {
+
     return (
         <div className='home'>
             <Presentation/>
             <h2 className='home__title' id='mes-travaux'>MES TRAVAUX</h2>
             <div className="gallery">
-        {data.map(({ id, title, picture, content }) => (
-          <NavLink className="gallery__cards" key={id} to={`/.../${id}`}>
+        {data.map(({ id, title, picture, content, lien }) => (
+          <NavLink className="gallery__cards" key={id} to={lien}>
             <Card title={title} picture={picture} content={content} />
           </NavLink>
         ))}
@@ -31,7 +32,7 @@ const Home = () => {
       <div className='monCv'>
         <Cv />
       </div>
-      <h2 className="contact__title" id='contact'>CONTACT</h2>
+      <h2 className="contact__title" id='contact'>UN PROJET ? <br></br> CONTACTEZ-MOI</h2>
       <div className='contact__block'>
         <Contact />
       </div>

@@ -28,5 +28,25 @@
         "id": "c6",
         "title": "Node js",
         "picture": "./node-logo.svg"
+    },
+    {
+        "id": "c7",
+        "title": "Sass",
+        "picture": "./sass.webp"
+    },
+    {
+        "id": "c8",
+        "title": "Git",
+        "picture": "./git.svg"
+    },
+    {
+        "id": "c9",
+        "title": "Jest",
+        "picture": "./jest.svg"
+    },
+    {
+        "id": "c10",
+        "title": "Notion",
+        "picture": "./notion.svg"
     }
 ]

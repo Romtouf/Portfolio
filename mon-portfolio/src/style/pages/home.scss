@@ -31,20 +31,21 @@ padding-top: 50px;
     @include flex(row, center, center);
     flex-wrap: wrap;
     background-color: $color-2;
-    gap: 50px;
+    gap: 160px;
     margin: 0 100px 50px 100px;
     padding: 50px;
     border-radius: 25px;
     height: 100%;
     @media (max-width: 1200px) {
       @include flex(column, center, center);
-      gap: 100px;
+      gap: 110px;
       padding: 0;
       background: $color-2;
       padding: 50px 0;
     }
     @media (max-width: 999px) {
       margin: 0;
+      gap: 130px;
      } 
      @media (max-width: 600px) {
       gap: 150px;

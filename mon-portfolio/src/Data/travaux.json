@@ -1,20 +1,30 @@
 [
     {
         "id": "1",
-        "title": "Portfolio de Sophie Bluel, photographe",
-        "content": "Créer une page web dynamique avec JavaScript.",
-        "picture": "./sophie-bluel.webp"
+        "title": "Oh my food, site de réservation de restaurants gastronomiques.",
+        "content": "Améliorer l'interface d'un site mobile avec des animations CSS.",
+        "picture": "./ohmyfood.webp",
+        "lien": "https://romtouf.github.io/Oh-my-food/"
       },
       {
         "id": "2",
-        "title": "Kasa, location immobilière",
+        "title": "Kasa, location immobilière.",
         "content": "Créer une application web avec React.",
-        "picture": "./kasa.webp"
+        "picture": "./kasa.webp",
+        "lien": "https://github.com/Romtouf/Menu_Maker_by_Qwenta"
       },
       {
         "id": "3",
-        "title": "Argent Bank, banque en ligne ",
+        "title": "Argent Bank, banque en ligne. ",
         "content": "Implémenter le front-end d'une application avec React et Redux.",
-        "picture": "./argent-bank.webp"
+        "picture": "./argent-bank.webp",
+        "lien": "https://github.com/Romtouf/Menu_Maker_by_Qwenta"
+      },
+      {
+        "id": "4",
+        "title": "Qwenta, menu maker pour restaurateurs. ",
+        "content": "Planifier le développement d'un site client.",
+        "picture": "./qwenta.webp",
+        "lien": "https://github.com/Romtouf/Menu_Maker_by_Qwenta"
       }
 ]

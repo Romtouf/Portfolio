@@ -1,42 +1,18 @@
-.contact{
-    &__form {
-        background-color: $color-5;
-        @include flex(column, center, center);
-        gap: 20px;
+.contact {
+    background-color: $color-2;
+    color: $color-1;
+    &__block {
+        background: $color-5;
+        @include flex(row, center, center);
         padding-bottom: 50px;
-        &__infos {
-            @include flex(column, center, center);
-            gap: 20px;
-            & input {
-                height: 30px;
-                width: 400px;
-                border-radius: 10px;
-                border: 2px solid $color-4;
-                @media (max-width: 450px) {
-                    width: 300px;
-                   } 
-            }
-            & textarea {
-                height: 300px;
-                width: 400px;
-                border-radius: 10px;
-                border: 2px solid $color-4;
-                @media (max-width: 450px) {
-                    width: 300px;
-                   } 
-            }
-        }
     }
 }
 
-#input-submit {
-    height: 40px;
-    width: 400px;
-    @include font(22px, 700);
-    border: 2px solid $color-4;
-    border-radius: 10px;
-    background-color: $color-2;
-    @media (max-width: 450px) {
-        width: 300px;
-       } 
-}
+.enveloppe{
+        background-color: $color-2;
+        color: $color-1;
+        height: 78px;
+        border-radius: 50px;
+        padding: 10px;
+    }
+
