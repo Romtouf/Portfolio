@@ -11,14 +11,14 @@
         "title": "Kasa, location immobilière.",
         "content": "Créer une application web avec React.",
         "picture": "./kasa.webp",
-        "lien": "https://github.com/Romtouf/Menu_Maker_by_Qwenta"
+        "lien": "https://github.com/Romtouf/Kasa"
       },
       {
         "id": "3",
         "title": "Argent Bank, banque en ligne. ",
         "content": "Implémenter le front-end d'une application avec React et Redux.",
         "picture": "./argent-bank.webp",
-        "lien": "https://github.com/Romtouf/Menu_Maker_by_Qwenta"
+        "lien": "https://github.com/Romtouf/ArgentBank-website"
       },
       {
         "id": "4",

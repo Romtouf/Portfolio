@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import logo from "../assets/photo-portfolio.webp";
 import logoGithub from "../assets/github-mark-white.svg";
 
@@ -12,37 +13,37 @@ const Header = () => {
           <img className='logo-portrait' src={logo} alt="Logo"></img>
         </div>
         <div className="header__links">
-          <a href='/'
+          <NavLink to='/'
             className={(nav) => (nav.isActive ? "nav-active" : "")}
           >
             Accueil
-          </a>
-          <a
-            href="#presentation"
+          </NavLink>
+          <Link
+            to="#presentation"
             className={(nav) => (nav.isActive ? "nav-active" : "")}
           >
             Présentation
-          </a>
-          <a href='#mes-travaux'
+          </Link>
+          <Link to='#mes-travaux'
             className={(nav) => (nav.isActive ? "nav-active" : "")}
           >
             Mes travaux
-          </a>
-          <a href='#competences'
+          </Link>
+          <Link to='#competences'
             className={(nav) => (nav.isActive ? "nav-active" : "")}
           >
             Compétences
-          </a>
-          <a href='#mon-cv'
+          </Link>
+          <Link to='#mon-cv'
             className={(nav) => (nav.isActive ? "nav-active" : "")}
           >
             Mon CV
-          </a>
-          <a href='#contact'
+          </Link>
+          <Link to='#contact'
             className={(nav) => (nav.isActive ? "nav-active" : "")}
           >
             Contact
-          </a>
+          </Link>
         </div>
         <NavLink className="logo-github"
           to="https://github.com/Romtouf"

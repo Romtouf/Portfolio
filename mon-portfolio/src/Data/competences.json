@@ -41,12 +41,22 @@
     },
     {
         "id": "c9",
+        "title": "GitHub",
+        "picture": "./github-mark.svg"
+    },
+    {
+        "id": "c10",
         "title": "Jest",
         "picture": "./jest.svg"
     },
     {
-        "id": "c10",
+        "id": "c11",
         "title": "Notion",
         "picture": "./notion.svg"
+    },
+    {
+        "id": "c12",
+        "title": "Swagger",
+        "picture": "./swagger.svg"
     }
 ]
